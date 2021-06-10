@@ -14,35 +14,11 @@
   <ul>
     <li>ddd</li>
     <li>ddd</li>
-    <li>ddd</li>
+    <li id="li3">ddd</li>
   </ul>
   <script src="./js/jquery-1.12.4.js"></script>
   <script>
-    // 代替window.onload() 等页面加载完再运行
-    $(() => {
-      console.log(666);
-    })
-    // 获取元素 执行操作
-    $('button').click(() => {
-      $('.box').slideToggle()
-    })
-    // jq构造函数 $
-    console.log($);
-    // 获取的不是DOM对象 而是jq对象
-    console.log($('ul'));
-    // 原生转为jq
-    let lis = document.querySelectorAll('li')
-    console.log(lis);
-    let jqLis = $(lis)
-    console.log(jqLis);
-    // 可以通过jq转为原生
-    let ul = $('ul')[0]
-    let getUl = $('ul').get(0)
-    console.log(ul);
-    console.log(getUl);
-    // 后台返回个字符串 转为jq对象
-    let html = `<div>你好</div>`
-    console.log($(html));
+    console.log(666);
   </script>
 </body>
 </html>
