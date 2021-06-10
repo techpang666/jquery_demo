@@ -7,9 +7,20 @@
   <title>Document</title>
 </head>
 <body>
+  <button>点我</button>
+  <div class="box">
+    伸缩盒子
+  </div>
   <script src="./js/jquery-1.12.4.js"></script>
   <script>
-    console.log(666);
+    // 代替window.onload() 等页面加载完再运行
+    $(() => {
+      console.log(666);
+    })
+    // 获取元素 执行操作
+    $('button').click(() => {
+      $('.box').slideToggle()
+    })
   </script>
 </body>
 </html>
