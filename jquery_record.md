@@ -46,12 +46,13 @@
 
 ```js
     let ul = $('ul')
-    // equal等于的意思
-    console.log(ul.eq(0));
+    let lis = $('li')
+    // equal等于的意思 找第几个元素
+    let li2 = lis.eq(1)
     
     // 兄弟选择器(不包括自己)
-    console.log(ul.siblings());
-    console.log(ul.siblings('#li3'));
+    console.log(li2.siblings());
+    console.log(li2.siblings('#li3'));
     
     // 父选择器
     console.log(ul.parent());
