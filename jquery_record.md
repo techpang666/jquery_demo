@@ -2,6 +2,12 @@
 # 一些记录
 
 ```js
+    // 原生方法
+    window.onload()
+    // $()默认document
+    $(document).ready(() => {
+      console.log(666);
+    })
     // 代替window.onload() 等页面加载完再运行
     $(() => {
       console.log(666);
